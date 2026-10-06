@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>楽天ROOM 投稿候補ツール</title>
+  <style>
+    :root { --bg: #fafafa; --fg: #222; --muted: #666; --line: #ddd; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #181818; --fg: #eee; --muted: #aaa; --line: #333; } }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.8 system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 40px 16px; }
+    h1 { font-size: 1.5rem; margin: 0 0 8px; }
+    h2 { font-size: 1.1rem; margin: 32px 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+    p, li { color: var(--fg); }
+    .muted { color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>楽天ROOM 投稿候補ツール</h1>
+    <p class="muted">個人利用の非公開ツールです。</p>
+
+    <h2>概要</h2>
+    <p>楽天市場のランキング情報をもとに、楽天ROOMで紹介する商品の候補を毎日まとめ、紹介文の下書きを作成するための個人用ツールです。</p>
+
+    <h2>楽天ウェブサービスの利用目的</h2>
+    <ul>
+      <li>楽天市場ランキングAPIで、対象ジャンルのランキング情報（商品名・価格・レビュー情報・商品URLなど）を1日1回取得します。</li>
+      <li>取得した情報は、楽天ROOMでの商品紹介文の作成と、紹介する商品の選定にのみ使用します。</li>
+      <li>楽天ROOMへの投稿は本人が手動で行います。自動投稿やスクレイピングは行いません。</li>
+      <li>取得データの再配布・第三者への提供は行いません。</li>
+    </ul>
+
+    <h2>運用</h2>
+    <ul>
+      <li>利用者：本人のみ</li>
+      <li>実行頻度：1日1回（想定QPS 1以下）</li>
+    </ul>
+  </main>
+</body>
+</html>
